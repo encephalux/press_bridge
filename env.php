@@ -1,8 +1,8 @@
 <?php
 
-const _RUN_MODE_ = "production";
+const _RUN_ENV_ = "production";
 const _API_TOKEN_ = "api_token";
-const _UI_URL = "https://";
-const _API_BASE_URL_ = (_RUN_MODE_ === "development" ? "http://localhost:3001" : "{app_domain}") . "/wordpress-caching";
-const _AVAILABLE_POST_TYPES_ = ["post", "page"];
-
+const _UI_URL_ = "https://";
+const _HOOK_PATH_BASE_ = _UI_URL_ . "/press-bridge";
+const _SUPPORTED_POST_TYPES_ = ["post", "page"];
+const _ALLOWED_ORIGIN_ = "*";

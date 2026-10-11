@@ -104,3 +104,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Notes de travail (manifest)
+notes.md

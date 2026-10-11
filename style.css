@@ -1,9 +1,9 @@
 /*
-Theme Name: WORDPRESS CACHING THEME
-Theme URI: mailto://wordpress@komlankamekpo.pro
-Author: Ova.
-Author URI: mailto://wordpress@komlankamekpo.pro
-Description: Thème fournissant une personnalisation pour l'interfaçage avec une application nodejs utilisant le module ova_wordpress_caching
+Theme Name: Press bridge theme
+Theme URI: https://github.com/encephalux/press_bridge
+Author: encephalux
+Author URI: https://github.com/encephalux
+Description: Thème headless qui fait de WordPress le back-office d'une application front-end externe. Il notifie l'application par webhook à chaque création, mise à jour ou suppression de contenu, expose un endpoint AJAX de listing paginé des contenus publiés et renvoie le HTML brut des articles et pages.
 Requires at least: WordPress 5.12
 Version: 1.0
 */
