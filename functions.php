@@ -132,7 +132,7 @@ function load_post() : void
             'title' => $post['post_title'],
             'excerpt' => $post['post_excerpt'],
             'date' => $post['post_date'],
-            'thumbnail' => get_the_post_thumbnail_url($post['ID'], "small"),
+            'thumbnail' => get_the_post_thumbnail_url($post['ID'], "medium"),
             'author' => get_the_author_meta("display_name", $post['post_author'])
         ];
     }

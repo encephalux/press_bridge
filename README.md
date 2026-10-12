@@ -20,7 +20,7 @@ WordPress reste l'outil d'édition ; l'affichage est délégué à une autre app
 
 ## Prérequis
 
-- WordPress 5.x ou supérieur
+- WordPress 5.5 ou supérieur (le hook `delete_post` doit transmettre l'objet `$post`)
 - PHP 8.0+ (types union `bool|string`)
 - Extension PHP `curl`
 
@@ -63,7 +63,7 @@ curl -X POST https://mon-wordpress.example.com/wp-admin/admin-ajax.php \
       "title": "Mon article",
       "excerpt": "…",
       "date": "2026-10-11 14:32:00",
-      "thumbnail": "https://…/image-150x150.jpg",
+      "thumbnail": "https://…/image-300x200.jpg",
       "author": "Jane Doe"
     }
   ]

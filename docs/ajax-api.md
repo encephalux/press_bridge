@@ -44,7 +44,7 @@ Access-Control-Allow-Origin: <_ALLOWED_ORIGIN_>
       "title": "Mon article",
       "excerpt": "Résumé",
       "date": "2026-10-11 14:32:00",
-      "thumbnail": "https://example.com/wp-content/uploads/2026/10/image-150x150.jpg",
+      "thumbnail": "https://example.com/wp-content/uploads/2026/10/image-300x200.jpg",
       "author": "Jane Doe"
     }
   ]
@@ -59,7 +59,7 @@ Access-Control-Allow-Origin: <_ALLOWED_ORIGIN_>
 | `list[].title` | string | Titre |
 | `list[].excerpt` | string | Extrait manuel (vide si non renseigné) |
 | `list[].date` | string | `post_date`, format `Y-m-d H:i:s` |
-| `list[].thumbnail` | string \| false | URL de l'image mise en avant (taille `small`), ou `false` s'il n'y en a pas |
+| `list[].thumbnail` | string \| false | URL de l'image mise en avant en taille `medium` (300 px max par défaut, réglable dans *Réglages → Médias*), ou `false` s'il n'y en a pas. Si l'image originale est plus petite que cette taille, c'est son URL qui est renvoyée |
 | `list[].author` | string | Nom affiché de l'auteur |
 
 ### Pagination

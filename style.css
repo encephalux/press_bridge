@@ -4,6 +4,7 @@ Theme URI: https://github.com/encephalux/press_bridge
 Author: encephalux
 Author URI: https://github.com/encephalux
 Description: Thème headless qui fait de WordPress le back-office d'une application front-end externe. Il notifie l'application par webhook à chaque création, mise à jour ou suppression de contenu, expose un endpoint AJAX de listing paginé des contenus publiés et renvoie le HTML brut des articles et pages.
-Requires at least: WordPress 5.12
+Requires at least: 5.5
+Requires PHP: 8.0
 Version: 1.0
 */
