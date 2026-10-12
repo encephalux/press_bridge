@@ -53,7 +53,7 @@ function post_saved($id, $post, $is_update) : void
     $thumbnail = get_the_post_thumbnail_url($post, "full");
     $data = [
         'post_type' => $post->post_type,
-        'id' => $id,
+        'id' => (string) $id,
         'slug' => $post->post_name,
         'title' => $post->post_title,
         'status' => $status,
@@ -74,7 +74,7 @@ function post_deleted($id, $post) : void
     $endpoint = "/remove";
     $data = [
         'post_type' => $post->post_type,
-        'id' => $id
+        'id' => (string) $id
     ];
 
     notify($endpoint, $data);

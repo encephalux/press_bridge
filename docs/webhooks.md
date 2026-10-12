@@ -26,7 +26,7 @@ Déclenchés par le hook WordPress `save_post`, pour les types listés dans `_SU
 {
   "token": "api_token",
   "post_type": "post",
-  "id": 42,
+  "id": "42",
   "slug": "mon-article",
   "title": "Mon article",
   "status": "published",
@@ -41,7 +41,7 @@ Déclenchés par le hook WordPress `save_post`, pour les types listés dans `_SU
 |---|---|---|
 | `token` | string | Secret partagé (`_API_TOKEN_`) |
 | `post_type` | string | `post`, `page`, ou tout type de `_SUPPORTED_POST_TYPES_` |
-| `id` | int | ID WordPress |
+| `id` | string | ID WordPress (chaîne, comme dans l'API AJAX) |
 | `slug` | string | `post_name` (peut être vide pour un brouillon) |
 | `title` | string | Titre |
 | `status` | string | `"published"` si `post_status === "publish"`, sinon `"not_published"` (brouillon, en attente, privé, programmé, corbeille…) |
@@ -67,7 +67,7 @@ Déclenché par le hook `delete_post`, c'est-à-dire lors de la **suppression d�
 {
   "token": "api_token",
   "post_type": "post",
-  "id": 42
+  "id": "42"
 }
 ```
 
